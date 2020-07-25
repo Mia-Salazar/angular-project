@@ -1,0 +1,27 @@
+<section class="container mt-5">
+    <div class="row">
+        <article class="col-12 col-lg-6 ">
+            <h1 class="my-2">ngIf</h1>
+            <div *ngIf="show" class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{text}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <button (click)="show = !show" type="button" class="btn btn-success">Success</button>
+
+        </article>
+        <article class="col-12 col-lg-6">
+            <h1 class="my-2">ngFor</h1>
+            <ul class="list-group">
+                <li *ngFor="let technology of technologies; let i = index" class="list-group-item"> {{i + 1}} {{technology}}</li>
+            </ul>
+            
+        </article>
+
+    </div>
+
+</section>
