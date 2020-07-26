@@ -1,0 +1,18 @@
+<section class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+        <h1 class="text-center mr-2 mb-0">{{detailElement.nombre | uppercase}}</h1>
+        <img *ngIf="detailElement.casa == 'DC'" alt="" src="assets/img/dc.svg" style="height: 40px" />
+        <img *ngIf="detailElement.casa == 'Marvel'" alt="" src="assets/img/marvel.svg" style="height: 40px" />
+    </div>
+
+    <figure class="m-0 d-flex justify-content-center mb-5">
+        <img alt="" src={{detailElement.img}} class="img-fluid" />
+    </figure>
+    <div class="card p-4 col-12 col-lg-6 offset-lg-3">
+        <p>
+            {{detailElement.bio}}
+        </p>
+        <small>Primera aparición: {{detailElement.aparicion}}</small>
+        <a class="btn btn-success my-3" [routerLink]="['/heroes']">Volver atrás</a>
+    </div>
+</section>

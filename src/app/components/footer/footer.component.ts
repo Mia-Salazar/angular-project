@@ -10,7 +10,7 @@ export class FooterComponent {
   me = {
     author:'Mia Salazar',
     description: 'Front end developer junior',
-    url: 'www.miasalazar.com'
+    url: 'http://www.miasalazar.com'
   }
   technologies:string[] = ['Html', 'Css', 'Javascript', 'Angular']
 

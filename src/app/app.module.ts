@@ -3,13 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { APP_ROUTING } from './app.routes'
 
+//Services
+import { HeroesServices } from './services/heroes.services'
+
 //Components
 import { AppComponent } from './app.component';
 import { Header } from './components/header/header.component'
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { HeroesComponent } from './heroes/heroes.component'
+import { HeroesComponent } from './heroes/heroes.component';
+import { DetailComponent } from './detail/detail.component'
 
 @NgModule({
   declarations: [
@@ -18,13 +22,16 @@ import { HeroesComponent } from './heroes/heroes.component'
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    HeroesServices
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
