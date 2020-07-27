@@ -1,0 +1,14 @@
+<article class="card" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <figure class="col-md-4 m-0">
+        <img src={{heroe.img}} class="card-img" alt="">
+      </figure>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{heroe.nombre}}</h5>
+          <p class="card-text">Primera aparición: <small>{{heroe.aparicion | date: 'y'}}</small></p>
+          <button class="btn btn-success my-3" (click)="moreDetails()">Ver más...</button>
+        </div>
+      </div>
+    </div>
+</article>

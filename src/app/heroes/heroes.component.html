@@ -1,19 +1,6 @@
 <section class="animated fadeIn container">
     <h1>Héroes de comic</h1>
     <div class="heroes-list mt-4">
-        <article class="card" style="max-width: 540px;" *ngFor="let heroe of heroes; let i = index" id={{i}}>
-            <div class="row no-gutters">
-              <figure class="col-md-4 m-0">
-                <img src={{heroe.img}} class="card-img" alt="">
-              </figure>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">{{heroe.nombre}}</h5>
-                  <p class="card-text">Primera aparición: <small>{{heroe.aparicion | date: 'y'}}</small></p>
-                  <a class="btn btn-success my-3" [routerLink]="['/detail', i]">Ver más...</a>
-                </div>
-              </div>
-            </div>
-        </article>
+      <card *ngFor="let heroe of heroes; let i = index" [heroe]="heroe" [index]="i"></card>
     </div>
 </section>

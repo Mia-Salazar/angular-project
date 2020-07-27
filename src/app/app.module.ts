@@ -14,7 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { DetailComponent } from './detail/detail.component';
-import { ResultComponent } from './result/result.component'
+import { ResultComponent } from './result/result.component';
+import { CardComponent } from './components/card/card.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ResultComponent } from './result/result.component'
     AboutComponent,
     HeroesComponent,
     DetailComponent,
-    ResultComponent
+    ResultComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
