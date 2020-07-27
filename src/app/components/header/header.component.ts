@@ -1,4 +1,5 @@
-import {Component} from '@angular/core'
+import { Component } from '@angular/core'
+import { Router } from '@angular/router'
 
 @Component({
     selector: 'header',
@@ -7,5 +8,11 @@ import {Component} from '@angular/core'
 })
 
 export class Header {
+    constructor( private router:Router){
+    }
+    
+    seachElement(element:string){
+        this.router.navigate(['/result', element])
+    }
 
 }

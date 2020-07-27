@@ -1,0 +1,14 @@
+<section class="container justify-content-center">
+    <h1 class="text-center">Resultados de la búsqueda: {{term}}</h1>
+    <div class="alert alert-danger mt-5" role="alert" *ngIf="resultElements.length == 0">
+        No hay resultados para {{term}}
+    </div>
+    <div class="row justify-content-lg-between">
+        <article class="card col-lg-3 m-4" *ngFor="let resultElement of resultElements; let i = index">
+            <img src={{resultElement.img}} class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text text-center font-weight-bold">{{resultElement.nombre}}</p>
+            </div>
+        </article>
+    </div>
+</section>
