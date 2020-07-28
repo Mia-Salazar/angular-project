@@ -5,10 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
+
 export class FooterComponent {
   show:boolean = false
+  encrypt:boolean = false
   me = {
-    author:'Mia Salazar',
+    author:'mia salazar',
     description: 'Front end developer junior',
     url: 'http://www.miasalazar.com'
   }

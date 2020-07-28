@@ -16,6 +16,9 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { DetailComponent } from './detail/detail.component';
 import { ResultComponent } from './result/result.component';
 import { CardComponent } from './components/card/card.component';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { DomSeguroPipe } from './pipes/domseguro.pipe';
+import { PasswordEncryptPipe } from './pipes/password-encrypt.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { CardComponent } from './components/card/card.component';
     HeroesComponent,
     DetailComponent,
     ResultComponent,
-    CardComponent
+    CardComponent,
+    CapitalizePipe,
+    DomSeguroPipe,
+    PasswordEncryptPipe,
   ],
   imports: [
     BrowserModule,
